@@ -1,0 +1,132 @@
+{
+    "fields": [
+        {
+            "metadata": {},
+            "name": "CustomerID",
+            "nullable": true,
+            "unique": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "Gender",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "SeniorCitizen",
+            "nullable": true,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "Partner",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "Dependents",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "Tenure",
+            "nullable": true,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "PhoneService",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "MultipleLines",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "InternetService",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "OnlineSecurity",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "OnlineBackup",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "DeviceProtection",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "TechSupport",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "StreamingTV",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "StreamingMovies",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "Contract",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "PaperlessBilling",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "PaymentMethod",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "MonthlyCharges",
+            "nullable": true,
+            "type": "float"
+        },
+        {
+            "metadata": {},
+            "name": "TotalCharges",
+            "nullable": true,
+            "type": "float"
+        },
+        {
+            "metadata": {},
+            "name": "Churn",
+            "nullable": true,
+            "type": "string"
+        }
+    ],
+    "type": "struct"
+}
