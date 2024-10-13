@@ -13,31 +13,33 @@ End-to-end Telco Churn Data Engineering Project using Docker, Python, Apache Air
 ## 1. Architecture
 ![Architecture](https://github.com/hijirdella/Telco-Churn-Data-Pipeline/blob/cb5cd2723092ca9fa8e44b5e37eada8e53a98360/Picture/Architecture.png)
 
-Arsitektur pipeline data yang digunakan untuk analisis churn pelanggan di sektor telekomunikasi, menggunakan beberapa komponen utama:
+Arsitektur pipeline data untuk analisis churn pelanggan di sektor telekomunikasi menggunakan beberapa komponen utama:
 
-Airflow:
-Scheduler: Mengatur penjadwalan tugas-tugas (tasks) dalam pipeline.
-Webserver & Worker: Mengelola eksekusi dan hasil dari tugas yang dikirimkan ke Spark.
+**Airflow:**
+- **Scheduler:** Mengatur penjadwalan tugas-tugas (tasks) dalam pipeline.
+- **Webserver & Worker:** Mengelola eksekusi dan hasil dari tugas yang dikirimkan ke Spark.
 
-PostgreSQL (db):
-Berfungsi sebagai basis data utama untuk menyimpan data mentah dan hasil transformasi.
-Berkomunikasi dengan Spark untuk mendapatkan data yang dibutuhkan.
+**PostgreSQL (db):**
+- Berfungsi sebagai basis data utama untuk menyimpan data mentah dan hasil transformasi.
+- Berkomunikasi dengan Spark untuk mendapatkan data yang dibutuhkan.
 
-Spark Cluster:
-Master: Mengelola eksekusi job dari Spark dan mengirimkan tugas-tugas ke node worker.
-Worker: Memproses tugas yang diberikan oleh master dan mengembalikan status pekerjaan.
+**Spark Cluster:**
+- **Master:** Mengelola eksekusi job dari Spark dan mengirimkan tugas-tugas ke node worker.
+- **Worker:** Memproses tugas yang diberikan oleh master dan mengembalikan status pekerjaan.
 
-Docker:
-Seluruh komponen (Airflow, PostgreSQL, dan Spark) dijalankan dalam container Docker untuk konsistensi lingkungan dan kemudahan dalam deployment.
+**Docker:**
+- Seluruh komponen (Airflow, PostgreSQL, dan Spark) dijalankan dalam container Docker untuk konsistensi lingkungan dan kemudahan dalam deployment.
 
-Alur Kerja:
-Airflow berkomunikasi dengan PostgreSQL untuk mengambil data yang dibutuhkan.
-Airflow kemudian mengirimkan tugas ke Spark untuk melakukan transformasi data dan analisis churn.
-Spark Master akan mengelola dan membagi tugas ke Spark Worker untuk diproses.
-Hasil pemrosesan dikembalikan ke PostgreSQL atau disimpan sesuai kebutuhan, lalu status pekerjaan dilaporkan kembali ke Airflow untuk menyelesaikan tugas.
+**Alur Kerja:**
+1. **Airflow** berkomunikasi dengan **PostgreSQL** untuk mengambil data yang dibutuhkan.
+2. **Airflow** kemudian mengirimkan tugas ke **Spark** untuk melakukan transformasi data dan analisis churn.
+3. **Spark Master** akan mengelola dan membagi tugas ke **Spark Worker** untuk diproses.
+4. Hasil pemrosesan dikembalikan ke **PostgreSQL** atau disimpan sesuai kebutuhan, lalu status pekerjaan dilaporkan kembali ke **Airflow** untuk menyelesaikan tugas.
+5. Hasil pemrosesan juga disimpan dalam bentuk **CSV** di folder **result**.
+6. File **CSV** tersebut kemudian di-load ke **Looker** untuk visualisasi dan analisis lebih lanjut.
 
-Kesimpulan:
-Arsitektur ini memungkinkan pipeline yang terstruktur dan scalable untuk proses analisis churn pelanggan di sektor telekomunikasi menggunakan orchestrasi Airflow, pemrosesan batch Spark, dan penyimpanan data dengan PostgreSQL, semuanya dikelola menggunakan Docker.
+**Kesimpulan:**
+Arsitektur ini memungkinkan pipeline yang terstruktur dan scalable untuk proses analisis churn pelanggan di sektor telekomunikasi menggunakan orchestrasi **Airflow**, pemrosesan batch **Spark**, dan penyimpanan data dengan **PostgreSQL**, semuanya dikelola menggunakan **Docker**. Dengan tambahan alur penyimpanan hasil dalam bentuk **CSV** dan integrasi dengan **Looker**, arsitektur ini mendukung analisis berbasis data yang lebih dalam dan lebih mudah divisualisasikan.
 
 ## 2. DAG for Telco Customer Churn Analysis using Spark
 ![DAG](https://github.com/hijirdella/Telco-Churn-Data-Pipeline/blob/cb5cd2723092ca9fa8e44b5e37eada8e53a98360/Picture/output.png)
