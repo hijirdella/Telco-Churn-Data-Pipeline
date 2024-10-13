@@ -4,8 +4,8 @@ End-to-end Telco Churn Data Engineering Project using Docker, Python, Apache Air
 
 [Dataset: Telco Customer Churn](https://drive.google.com/open?id=1y_IwdVNOsWFFc9DqBfnVimC6BAMPTt46&usp=drive_copy)
 ## Dashboard
-![Dashboard](## 1. Architecture
-![Architecture](https://github.com/hijirdella/Telco-Churn-Data-Pipeline/blob/cb5cd2723092ca9fa8e44b5e37eada8e53a98360/Picture/Architecture.png)
+
+![Dashboard](https://github.com/hijirdella/Telco-Churn-Data-Pipeline/blob/650b81429232dc00eee52ae4f22179bacc341648/Picture/Dashboard.jpg)
 [Dashboard: Telco Customer Churn]([https://drive.google.com/open?id=1y_IwdVNOsWFFc9DqBfnVimC6BAMPTt46&usp=drive_copy](https://lookerstudio.google.com/reporting/c5149b81-33e2-400e-9e64-0ab860ce73de)
 
 
