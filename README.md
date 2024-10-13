@@ -1,8 +1,9 @@
 # Data Engineering Project: Building a Telco Churn Analysis Pipeline
 End-to-end Telco Churn Data Engineering Project using Docker, Python, Apache Airflow, PostgreSQL, and Spark. This project automates data ingestion, processing, and storage through a scalable pipeline. Airflow orchestrates the workflow, Spark handles batch processing, and PostgreSQL serves as the primary database.
 
+[Dataset: Telco Customer Churn (dibimbing)](https://drive.google.com/open?id=1y_IwdVNOsWFFc9DqBfnVimC6BAMPTt46&usp=drive_copy)
+[Dataset: Telco Customer Churn (Kaggle)](https://www.kaggle.com/datasets/blastchar/telco-customer-churn/data))
 
-[Dataset: Telco Customer Churn](https://drive.google.com/open?id=1y_IwdVNOsWFFc9DqBfnVimC6BAMPTt46&usp=drive_copy)
 ## Dashboard
 
 ![Dashboard](https://github.com/hijirdella/Telco-Churn-Data-Pipeline/blob/650b81429232dc00eee52ae4f22179bacc341648/Picture/Dashboard.jpg)
