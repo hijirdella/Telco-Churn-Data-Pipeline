@@ -71,6 +71,7 @@ End: Mengakhiri alur proses.
 ## postgres                     - Run a Postgres container
 ## spark                        - Run a Spark cluster, rebuild the postgres container, then create the destination tables
 ## clean                        - Cleanup all running containers related to the challenge.
-```
 Note: Make sure in config.json file CredStore= "wincred" (avoid this CredsStore, "s" double)
+```
+
 ---
